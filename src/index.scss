@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../public/images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.root {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weathForm1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  margin: 10% auto;
+  width: 500px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.weathDiv1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #b2cbf4 33%, #194d85 66%, #072045);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #0b2349;
+  display: table;
+  font-size: 40px;
+  font-weight: 600;
+}
+.weathInp1 {
+  font-size: 30px;
+  border: 2px solid;
+  border: none;
+  border-radius: 5px;
+  background-color: inherit;
+  color: inherit;
+  width: auto;
+  color: #ffffff;
+}
+.weathInp1:hover {
+  border-color: rgb(108, 103, 180);
+  background-color: aliceblue;
+  color: #033887;
+}
+.weathBt1 {
+  font-size: 25px;
+  color: #ffffff;
+  background: none;
+  border: 2px solid #b2cbf4;
+  border-radius: 20px;
+  font-weight: 600;
+  width: auto;
+  padding: 10px;
+  margin: 0 auto;
+}
+.weathBt1:hover {
+  background-color: #b2cbf4;
+}
+.formDiv1 {
+  display: block;
+  position: relative;
+  width: 500px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  z-index: 1000;
+}
+.formDiv1 p {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #191963 33%, #352078 66%, #033887);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0b2349;
+  display: table;
+}
+.formP1 {
+  padding-top: 10px;
+}
+.formP2 {
+  padding-bottom: 10px;
+}
+.formErr1 {
+  font-size: 40px;
+  text-align: center;
+  color: #033887;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.formErr1:hover {
+  color: #020202;
+}
+.load1 {
+  position: absolute;
+  color: #194d85;
+  font-size: 40px;
+  left: 100px;
+  top: 300px;
+}
+.input {
+  position: relative;
+  display: flex;
+  p {
+    position: absolute;
+    font-size: 23px;
+    color: #ffff;
+    top: -24px;
+    left: 349px;
+    background-color: #b2cbf4;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+.form-virst {
+  margin: 10% auto;
+}
+.form {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clearButton {
+  button {
+    background-color: inherit;
+    color: #ffffff;
+    border: 1px solid #4f4e4e;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #b2cbf4;
+      border: none;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    background-size: auto;
+  }
+}
+@media (max-width: 600px) {
+  .root {
+    padding: 0 5px;
+  }
+  .weathForm1 {
+    width: 250px;
+  }
+  .weathDiv1 {
+    font-size: 20px;
+  }
+  .weathInp1 {
+    font-size: 20px;
+  }
+  .input {
+    p {
+      font-size: 10px;
+      margin-top: 30px;
+      margin-left: -120px;
+    }
+  }
+  .weathBt1 {
+    font-size: 15px;
+    padding: 5px;
+  }
+  .formDiv1 {
+    width: 250px;
+    p {
+      font-size: 15px;
+    }
+  }
+  .clearButton {
+    button {
+      font-size: 15px;
+      padding: 5;
+    }
+  }
+  .load1 {
+    font-size: 15px;
+  }
+}
